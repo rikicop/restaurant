@@ -1,9 +1,9 @@
-import BuySell from "../components/BuySell";
-import ScrollToTop from "../components/ScrollToTop";
+//import BuySell from "../components/BuySell";
+//import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
-import Blogs from "../components/Blogs";
+//import Blogs from "../components/Blogs";
 //import { GetStaticProps } from "next";
-import styled from "styled-components";
+//import styled from "styled-components";
 //import ArticleList from "../components/ArticleList";
 //import { server } from "../config";
 //import { IndexPageProps } from "../Interfaces";
@@ -27,10 +27,10 @@ export default function Home() {
   //console.log(data);
   return (
     <>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Hero />
-      <BuySell />
-      <Blogs />
+      {/* <BuySell /> */}
+      {/* <Blogs /> */}
       {/*  <Hero>
         <Heading>NEXT</Heading>
       </Hero>

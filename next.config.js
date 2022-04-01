@@ -5,6 +5,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-}
+  images: {
+    disableStaticImages: false,
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

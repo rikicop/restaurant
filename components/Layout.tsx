@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
       <Meta />
       <Navbar />
       <main>{children}</main>
-      <Footer />
+      {/*  <Footer /> */}
     </>
   );
 }

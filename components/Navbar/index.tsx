@@ -11,6 +11,78 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   margin: 3rem 6rem;
+  .brand {
+    display: flex;
+    align-items: center;
+    .logo {
+      .brandLogo {
+        height: 5vh;
+      }
+    }
+    .toggle {
+      display: none;
+    }
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    ul {
+      display: flex;
+      list-style-type: none;
+      gap: 2rem;
+      li {
+        padding: 0.5rem 1rem;
+        transition: 0.3s ease-in-out;
+        border-radius: 0.3rem;
+        &:first-of-type,
+        &:hover {
+          background-color: var(--primary-color);
+          a {
+            color: black;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: white;
+          font-weight: bold;
+          transform: 0.3s ease-in-out;
+        }
+      }
+    }
+    .login-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      .flag {
+        display: flex;
+        justify-content: center;
+        gap: 0.3rem;
+        align-items: center;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      button {
+        border: 1px solid var(--primary-color);
+        background-color: transparent;
+        color: white;
+        border-radius: 0.3rem;
+        padding: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7rem;
+        font-weight: bold;
+        cursor: pointer;
+        svg {
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
 `;
 
 /* const StyledLink = styled.a`
@@ -25,7 +97,7 @@ const Navbar = () => {
     <Nav>
       <div className="brand">
         <div className="logo">
-          <Image src={logo} alt="Brand Logo" className="Brand Logo" />
+          <Image src={logo} alt="Brand Logo" className="brandLogo" />
         </div>
         <div className="toggle">
           {navState ? (
