@@ -1,7 +1,10 @@
-//import BuySell from "../components/BuySell";
-//import ScrollToTop from "../components/ScrollToTop";
+import BuySell from "../components/BuySell";
+import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
-//import Blogs from "../components/Blogs";
+import Blogs from "../components/Blogs";
+import Designs from "components/Designs";
+//import { useEffect } from "react";
+//import scrollreveal from "scrollreveal";
 //import { GetStaticProps } from "next";
 //import styled from "styled-components";
 //import ArticleList from "../components/ArticleList";
@@ -27,13 +30,13 @@ export default function Home() {
   //console.log(data);
   return (
     <>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Hero />
-      {/* <BuySell /> */}
-      {/* <Blogs /> */}
-      {/*  <Hero>
+      <Designs />
+      <BuySell />
+      <Blogs />
+      {/*  
         <Heading>NEXT</Heading>
-      </Hero>
       <ArticleList data={data} /> */}
     </>
   );

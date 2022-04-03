@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@types/scrollreveal": "^0.0.7",
     "babel-plugin-styled-components": "^2.0.6",
     "next": "latest",
     "react": "^17.0.2",
