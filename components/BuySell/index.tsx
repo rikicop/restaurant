@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import BuySell1 from "../../assets/buy-sell-1.png";
+//import BuySell1 from "../../assets/buy-sell-1.png";
 import BuySell2 from "../../assets/buy-sell-2.png";
 import BuySell3 from "../../assets/buy-sell-3.png";
 
@@ -9,7 +9,7 @@ const BuySell = () => {
   return (
     <Section>
       <div className="row">
-        <div className="col" id="buySell1">
+        {/*  <div className="col" id="buySell1">
           <div className="image-wrapper">
             <Image src={BuySell1} alt="BuySell1" />
           </div>
@@ -20,27 +20,27 @@ const BuySell = () => {
               <span> medios alternativos</span>
             </h2>
           </div>
-        </div>
+        </div> */}
         <div className="col" id="buySell2">
+          <div className="image-wrapper">
+            <Image src={BuySell2} alt="BuySell2" />
+          </div>
           <div className="text">
             <h2>
               Incorporamos <span> estrategias </span>
               de comunicación<span> tecnología</span>y recurso humano calificado
             </h2>
           </div>
-          <div className="image-wrapper">
-            <Image src={BuySell2} alt="BuySell2" />
-          </div>
         </div>
         <div className="col" id="buySell3">
-          <div className="image-wrapper">
-            <Image src={BuySell3} alt="BuySell3" />
-          </div>
           <div className="text">
             <h2>
-              Publicidad comunicacional de
+              Publicidad <span>comunicacional</span> de
               <span> calidad</span>, servicio personal calificado
             </h2>
+          </div>
+          <div className="image-wrapper">
+            <Image src={BuySell3} alt="BuySell3" />
           </div>
         </div>
       </div>

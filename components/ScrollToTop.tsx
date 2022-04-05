@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { AiOutlineArrowUp } from "react-icons/ai";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 export default function () {
-  const [visible, setVisible] = useState(false);
-  if (typeof window !== "undefined") {
-    window.addEventListener("scroll", () => {
-      window.pageYOffset > 100 ? setVisible(true) : setVisible(false);
-    });
-  }
   return (
     <Div>
-      <a href="#" className={`${visible ? "block" : "none"}`}>
-        <AiOutlineArrowUp />
+      <a href="https://wa.me/573115097934">
+        <AiOutlineWhatsApp color="green" size={40} />
       </a>
     </Div>
   );

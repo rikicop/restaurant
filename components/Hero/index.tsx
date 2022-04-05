@@ -3,7 +3,7 @@ import styled from "styled-components";
 import planeta from "../../assets/background.png";
 import imageHero from "../../assets/home.png";
 import Button from "components/Button";
-import { RiGroupLine } from "react-icons/ri";
+import { RiWhatsappFill } from "react-icons/ri";
 import Image from "next/image";
 
 const Hero = () => {
@@ -11,15 +11,18 @@ const Hero = () => {
     <Section id="hero">
       <div className="text">
         <h1>
-          <span className="highlight">Ethereum</span>is a real time strategic
-          game
+          <span className="highlight">Megapixeles </span>es tu estrategia de
+          publicidad.
         </h1>
         <p>
-          Donde crearás tu publicidad, <span className="highlight">crypto</span>
-          and <span className="highlight">NFT'S</span> by trading land, finding
-          treasures and building Busisness. Welcome!
+          Empresa orientada a la publicidad,
+          <span className="highlight">exterior visual </span>y
+          <span className="highlight"> medios alternativos</span>
         </p>
-        <Button text="Join our Discord" icon={<RiGroupLine />} />
+
+        <a href="https://wa.me/573115097934" style={{ textDecoration: "none" }}>
+          <Button text="Contáctame" icon={<RiWhatsappFill />} />
+        </a>
       </div>
       <div className="image">
         <Image src={imageHero} alt="hero" />

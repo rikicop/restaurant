@@ -1,29 +1,48 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import blog1 from "../../assets/blog1.png";
-import blog2 from "../../assets/blog2.png";
-import blog3 from "../../assets/blog3.png";
+import blog1 from "../../assets/blog1.jpg";
+import blog2 from "../../assets/blog1.jpeg";
+import blog3 from "../../assets/blog3.jpg";
 
 const Blogs = () => {
-  const images = [blog1, blog2, blog3];
+  const images = [
+    {
+      picture: blog1,
+      title: "Pancartas de Vinilo personalizadas",
+      description:
+        "Las pancartas de vinilo son un medio útil y efectivo que sirve para diversos propósitos personales y de marketing. Las pancartas de vinilo personalizadas son convenientes si está buscando algo para usar al aire libre durante mucho tiempo. ",
+    },
+    {
+      picture: blog2,
+      title: "Pancartas para exposiciones comerciales",
+      description:
+        "Instalar una pancarta de vinilo en las exposiciones significa que se beneficiará enormemente de sus características y ventajas. La impresión de pancartas de vinilo es económica y ayuda a mostrar contenido visualmente atractivo.",
+    },
+    {
+      picture: blog3,
+      title: "Pancartas de vinilo para desfiles",
+      description:
+        "¿Estás lanzando tu marca o actualizando tus servicios? Obtenga pancartas de vinilo personalizadas de apertura próxima para que las personas estén alertas a los cambios futuros. Coloque la impresión de pancartas de vinilo cerca del edificio de oficinas.",
+    },
+  ];
+
   return (
     <Section id="blogs">
       <div className="title">
-        <h2>News and Feeds</h2>
+        <h2>Servicios!</h2>
         <h5>Donde te puedes promocionar!</h5>
       </div>
       <div className="blogs">
-        {images.map((img, index) => {
+        {images.map(({ picture, title, description }) => {
           return (
-            <div className="blog" key={index}>
-              <Image src={img} alt="imagen" />
+            <div className="blog" key={title}>
+              <Image src={picture} alt="imagen" />
               <div className="data">
-                <h6>1 Jan,2022</h6>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing.</h4>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Nulla, cupiditate reiciendis animi deserunt voluptas quod.
+                {/* <h6>1 Jan,2022</h6> */}
+                <h4>{title}</h4>
+                <p style={{ textAlign: "justify", fontSize: "0.9rem" }}>
+                  {description}
                 </p>
               </div>
             </div>

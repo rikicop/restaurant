@@ -31,12 +31,12 @@ function Designs() {
       <div className="design6">
         <Image src={design6} alt="design" />
       </div>
-      <div className="design7">
+      {/* <div className="design7">
         <Image src={design7} alt="design" />
       </div>
       <div className="design8">
         <Image src={design8} alt="design" />
-      </div>
+      </div> */}
     </Div>
   );
 }
@@ -45,6 +45,7 @@ export default Designs;
 
 const Div = styled.div`
   position: relative;
+  z-index: -1;
 
   .design1 {
     position: absolute;

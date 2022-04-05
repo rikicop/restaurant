@@ -6,6 +6,7 @@ import logo from "../../assets/logo.png";
 import flag from "../../assets/flag.png";
 import { FiLock } from "react-icons/fi";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
+import { Link as LinkScroll } from "react-scroll";
 
 const Nav = styled.nav`
   display: flex;
@@ -161,13 +162,34 @@ const Navbar = () => {
           </li> 
           */}
           <li>
-            <a href="#about">About</a>
+            <LinkScroll
+              to="hero"
+              smooth={true}
+              duration={100}
+              style={{ cursor: "pointer" }}
+            >
+              Home
+            </LinkScroll>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <LinkScroll
+              to="blogs"
+              smooth={true}
+              duration={100}
+              style={{ cursor: "pointer" }}
+            >
+              Services
+            </LinkScroll>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <LinkScroll
+              to="footr"
+              smooth={true}
+              duration={100}
+              style={{ cursor: "pointer" }}
+            >
+              Contact
+            </LinkScroll>
           </li>
         </ul>
         <div className="login-btn">

@@ -3,6 +3,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
 import Blogs from "../components/Blogs";
 import Designs from "components/Designs";
+
 //import { useEffect } from "react";
 //import scrollreveal from "scrollreveal";
 //import { GetStaticProps } from "next";

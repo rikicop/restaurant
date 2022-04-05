@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "assets/logo.png";
-import Button from "../Button";
+//import Button from "../Button";
 import Image from "next/image";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+
 export default function Footer() {
   const links = [
-    { title: "Company", links: ["Home", "Map", "About", "News"] },
-    {
+    /*  {
       title: "Links",
       links: [
         "Brochure",
@@ -15,19 +16,14 @@ export default function Footer() {
         "Privacy Policy",
         "Cookie Policy",
       ],
-    },
+    }, */
     {
-      title: "Contact",
-      links: [
-        "+01 12344 12354",
-        "earthium@earthmail.com",
-        `Milkyway Sector 75, Planet Earth
-      `,
-      ],
+      title: "Contacto",
+      links: ["+57 311 5097934", "megapixels@gmail.com", `Sector San Eduardo`],
     },
   ];
   return (
-    <Footr>
+    <Footr id="footr">
       <div className="upper__footer">
         <div className="brand">
           <Image src={logo} alt="Footer Logo" />
@@ -36,10 +32,6 @@ export default function Footer() {
             world, where you could move, feel, interact and communicate is a
             recurring theme in books, animes and movies.
           </p>
-          <div className="mail-container">
-            <input type="email" placeholder="Enter Email" />
-            <Button text="Get Started" />
-          </div>
         </div>
         {links.map(({ title, links }) => {
           return (
@@ -57,10 +49,17 @@ export default function Footer() {
       <div className="lower__footer">
         <span>&copy; 2022 Earthium</span>
         <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Linkedin</li>
-          <li>Instagram</li>
+          <li>
+            <FaFacebook style={{ marginRight: "10px" }} />
+            Facebook
+          </li>
+          <li>
+            <FaTwitter style={{ marginRight: "10px" }} />
+            Twitter
+          </li>
+          <li>
+            <FaInstagram style={{ marginRight: "10px" }} /> Instagram
+          </li>
         </ul>
       </div>
     </Footr>
@@ -73,13 +72,14 @@ const Footr = styled.footer`
   .upper__footer {
     margin: 0 5rem;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 3rem;
     padding-top: 3rem;
     .brand {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      z-index: 1;
       gap: 1rem;
       img {
         height: 2rem;
