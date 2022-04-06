@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-//import BuySell1 from "../../assets/buy-sell-1.png";
 import BuySell2 from "../../assets/buy-sell-2.png";
 import BuySell3 from "../../assets/buy-sell-3.png";
 
@@ -9,18 +8,6 @@ const BuySell = () => {
   return (
     <Section>
       <div className="row">
-        {/*  <div className="col" id="buySell1">
-          <div className="image-wrapper">
-            <Image src={BuySell1} alt="BuySell1" />
-          </div>
-
-          <div className="text">
-            <h2>
-              Empresa orientada a la publicidad <span>exterior visual</span> y
-              <span> medios alternativos</span>
-            </h2>
-          </div>
-        </div> */}
         <div className="col" id="buySell2">
           <div className="image-wrapper">
             <Image src={BuySell2} alt="BuySell2" />

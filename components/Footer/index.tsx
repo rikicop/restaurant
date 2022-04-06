@@ -7,16 +7,6 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   const links = [
-    /*  {
-      title: "Links",
-      links: [
-        "Brochure",
-        "Company",
-        "Terms & Conditions",
-        "Privacy Policy",
-        "Cookie Policy",
-      ],
-    }, */
     {
       title: "Contacto",
       links: ["+57 311 5097934", "megapixels@gmail.com", `Sector San Eduardo`],

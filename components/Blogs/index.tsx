@@ -39,7 +39,6 @@ const Blogs = () => {
             <div className="blog" key={title}>
               <Image src={picture} alt="imagen" />
               <div className="data">
-                {/* <h6>1 Jan,2022</h6> */}
                 <p
                   style={{
                     color: "#10aec1",
