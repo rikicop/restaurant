@@ -9,21 +9,21 @@ const Blogs = () => {
   const images = [
     {
       picture: blog1,
-      title: "Pancartas de Vinilo personalizadas",
+      title: "Pancartas Personalizadas",
       description:
-        "Las pancartas de vinilo son un medio útil y efectivo que sirve para diversos propósitos personales y de marketing. Las pancartas de vinilo personalizadas son convenientes si está buscando algo para usar al aire libre durante mucho tiempo. ",
+        "Las pancartas de vinilo son un medio útil y efectivo que sirve para diversos propósitos personales y de marketing. ",
     },
     {
       picture: blog2,
-      title: "Pancartas para exposiciones comerciales",
+      title: "Pancartas Comerciales",
       description:
-        "Instalar una pancarta de vinilo en las exposiciones significa que se beneficiará enormemente de sus características y ventajas. La impresión de pancartas de vinilo es económica y ayuda a mostrar contenido visualmente atractivo.",
+        "Instalar una pancarta de vinilo en las exposiciones significa que se beneficiará enormemente de sus características y ventajas.",
     },
     {
       picture: blog3,
-      title: "Pancartas de vinilo para desfiles",
+      title: "Pancartas Informativas",
       description:
-        "¿Estás lanzando tu marca o actualizando tus servicios? Obtenga pancartas de vinilo personalizadas de apertura próxima para que las personas estén alertas a los cambios futuros. Coloque la impresión de pancartas de vinilo cerca del edificio de oficinas.",
+        "¿Estás lanzando tu marca o actualizando tus servicios? Obtenga pancartas de apertura para que las personas estén alertas a  cambios futuros.",
     },
   ];
 
@@ -40,8 +40,23 @@ const Blogs = () => {
               <Image src={picture} alt="imagen" />
               <div className="data">
                 {/* <h6>1 Jan,2022</h6> */}
-                <h4>{title}</h4>
-                <p style={{ textAlign: "justify", fontSize: "0.9rem" }}>
+                <p
+                  style={{
+                    color: "#10aec1",
+                    fontFamily: "Roboto",
+                    fontSize: "18px",
+                  }}
+                >
+                  {title}
+                </p>
+                <p
+                  style={{
+                    textAlign: "left",
+                    fontSize: "1rem",
+                    fontFamily: "Roboto",
+                    fontWeight: "500",
+                  }}
+                >
                   {description}
                 </p>
               </div>

@@ -3,8 +3,8 @@ import styled from "styled-components";
 //import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/logo.png";
-import flag from "../../assets/flag.png";
-import { FiLock } from "react-icons/fi";
+//import flag from "../../assets/flag.png";
+//import { FiLock } from "react-icons/fi";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
@@ -28,7 +28,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 30%;
     ul {
       display: flex;
       list-style-type: none;
@@ -168,7 +168,7 @@ const Navbar = () => {
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Home
+              Principal
             </LinkScroll>
           </li>
           <li>
@@ -178,7 +178,7 @@ const Navbar = () => {
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Services
+              Servicios
             </LinkScroll>
           </li>
           <li>
@@ -188,11 +188,11 @@ const Navbar = () => {
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Contact
+              Contacto
             </LinkScroll>
           </li>
         </ul>
-        <div className="login-btn">
+        {/*  <div className="login-btn">
           <div className="flag">
             <Image src={flag} alt="Flag" className="Flag" />
             <span>English</span>
@@ -200,7 +200,7 @@ const Navbar = () => {
           <button>
             <FiLock /> Login / Signup
           </button>
-        </div>
+        </div> */}
       </div>
     </Nav>
   );
