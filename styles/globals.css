@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
 
 :root {
-  --background-color: #01002a;
-  --primary-color: #fed700;
+  --background-color: white;
+  --primary-color: #27ae60;
   --hr-color: #c4c4c4;
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Nunito", sans-serif;
 }
 
 * {
@@ -18,9 +18,18 @@ html {
 }
 
 body {
-  color: white;
+  color: black;
   background-color: var(--background-color);
   font-family: var(--font-family);
+}
+
+section:first-of-type {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 
 button {

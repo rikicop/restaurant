@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import blog1 from "../../assets/blog1.jpg";
-import blog2 from "../../assets/blog1.jpeg";
-import blog3 from "../../assets/blog3.jpg";
+import blog1 from "../../assets/blog1.png";
+import blog2 from "../../assets/blog2.png";
+import blog3 from "../../assets/blog3.png";
 
 const Blogs = () => {
   const images = [
@@ -37,7 +37,9 @@ const Blogs = () => {
         {images.map(({ picture, title, description }) => {
           return (
             <div className="blog" key={title}>
-              <Image src={picture} alt="imagen" />
+              <div className="image-wrapper">
+                <Image src={picture} alt="imagen" />
+              </div>
               <div className="data">
                 <p
                   style={{
@@ -89,15 +91,20 @@ const Section = styled.section`
       align-items: center;
       gap: 1rem;
       flex-direction: column;
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: #fff;
       border-bottom: 0.5rem transparent solid;
       transition: 0.3s ease-in-out;
       &:hover {
         border-color: var(--primary-color);
       }
-      img {
-        width: 99%;
+      .image-wrapper {
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          object-fit: cover;
+        }
       }
+
       .data {
         padding: 1rem;
         gap: 1rem;

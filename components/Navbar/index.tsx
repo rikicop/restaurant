@@ -1,17 +1,14 @@
 import { useState } from "react";
 import styled from "styled-components";
-//import Link from "next/link";
 import Image from "next/image";
-import logo from "../../assets/logo.png";
-//import flag from "../../assets/flag.png";
-//import { FiLock } from "react-icons/fi";
+import logo from "../../assets/food.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  margin: 3rem 6rem;
+  margin: 1rem 1rem 1rem 1rem;
   .brand {
     display: flex;
     align-items: center;
@@ -28,7 +25,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 43%;
     ul {
       display: flex;
       list-style-type: none;
@@ -52,7 +49,7 @@ const Nav = styled.nav`
         }
         a {
           text-decoration: none;
-          color: white;
+          color: #666;
           font-weight: bold;
           transition: 0.3s ease-in-out;
         }
@@ -74,7 +71,7 @@ const Nav = styled.nav`
       button {
         border: 1px solid var(--primary-color);
         background-color: transparent;
-        color: white;
+        color: #666;
         border-radius: 0.3rem;
         padding: 0.8rem;
         display: flex;
@@ -109,7 +106,7 @@ const Nav = styled.nav`
     }
     .links {
       position: absolute;
-      background-color: black;
+      background-color: #fff;
       flex-direction: column;
       margin-top: 5rem;
       width: 100vw;
@@ -132,11 +129,6 @@ const Nav = styled.nav`
     }
   }
 `;
-/* const StyledLink = styled.a`
-  padding: 0rem 2rem;
-  text-decoration: none;
-  color: #fff;
-`; */
 
 const Navbar = () => {
   const [navState, setNavState] = useState<boolean>(false);
@@ -144,13 +136,19 @@ const Navbar = () => {
     <Nav>
       <div className="brand">
         <div className="logo">
-          <Image src={logo} alt="Brand Logo" className="brandLogo" />
+          <Image
+            src={logo}
+            alt="Brand Logo"
+            className="brandLogo"
+            height={80}
+            width={350}
+          />
         </div>
         <div className="toggle">
           {navState ? (
-            <BsToggleOn onClick={() => setNavState(false)} />
+            <BsToggleOn onClick={() => setNavState(false)} color="27ae60" />
           ) : (
-            <BsToggleOff onClick={() => setNavState(true)} />
+            <BsToggleOff onClick={() => setNavState(true)} color="27ae60" />
           )}
         </div>
       </div>
@@ -178,7 +176,17 @@ const Navbar = () => {
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Servicios
+              Blog
+            </LinkScroll>
+          </li>
+          <li>
+            <LinkScroll
+              to="portfolio"
+              smooth={true}
+              duration={100}
+              style={{ cursor: "pointer" }}
+            >
+              Portfolio
             </LinkScroll>
           </li>
           <li>
@@ -192,38 +200,9 @@ const Navbar = () => {
             </LinkScroll>
           </li>
         </ul>
-        {/*  <div className="login-btn">
-          <div className="flag">
-            <Image src={flag} alt="Flag" className="Flag" />
-            <span>English</span>
-          </div>
-          <button>
-            <FiLock /> Login / Signup
-          </button>
-        </div> */}
       </div>
     </Nav>
   );
 };
 
 export default Navbar;
-
-// OLD CODE
-/*  <Nav>
-      <div>
-        <Link href="/" passHref>
-          <StyledLink>NXT</StyledLink>
-        </Link>
-      </div>
-      <div>
-        <Link href="/" passHref>
-          <StyledLink>Home</StyledLink>
-        </Link>
-        <Link href="/about" passHref>
-          <StyledLink>About</StyledLink>
-        </Link>
-        <Link href="/contact" passHref>
-          <StyledLink>Contact</StyledLink>
-        </Link>
-      </div>
-    </Nav> */
