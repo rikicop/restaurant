@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "assets/logo.png";
+import logo from "assets/food.png";
 //import Button from "../Button";
 import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -16,7 +16,7 @@ export default function Footer() {
     <Footr id="footr">
       <div className="upper__footer">
         <div className="brand">
-          <Image src={logo} alt="Footer Logo" />
+          <Image src={logo} alt="Footer Logo" height={120} width={400} />
           <p>
             From Tron to Narnya, the idea to suddenly be transferred in another
             world, where you could move, feel, interact and communicate is a
@@ -37,7 +37,7 @@ export default function Footer() {
         })}
       </div>
       <div className="lower__footer">
-        <span>&copy; 2022 Earthium</span>
+        <span>&copy; 2022 TropiBurguer</span>
         <ul>
           <li>
             <FaFacebook style={{ marginRight: "10px" }} />
