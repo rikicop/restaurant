@@ -13,9 +13,9 @@ const Meta = ({ title, keywords, description }) => {
 };
 
 Meta.defaultProps = {
-  title: "MegaPixeles",
-  keywords: "avisos, pendones,pancartas",
-  description: "Los mejores avisos, pendones y pancartas",
+  title: "TropiBurguer",
+  keywords: "hamburguesas, perros,patacones",
+  description: "Comida rápida",
 };
 
 export default Meta;
