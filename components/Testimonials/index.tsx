@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
-import avatar1 from "../../assets/avatar1.jpeg";
+import avatar1 from "../../assets/avatar1.jpg";
+import avatar2 from "../../assets/avatar2.jpg";
+import avatar3 from "../../assets/avatar3.jpg";
 import { TitleStyles, imageZoomEffect } from "../ReusableStyles";
 export default function Testimonials() {
   return (
@@ -24,7 +26,7 @@ export default function Testimonials() {
           </div>
           <div className="testimonial">
             <div className="image-testimonial">
-              <Image src={avatar1} alt="" width="100%" height="100%" />
+              <Image src={avatar2} alt="" width="100%" height="100%" />
             </div>
             <p>
               He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
@@ -33,7 +35,7 @@ export default function Testimonials() {
           </div>
           <div className="testimonial">
             <div className="image-testimonial">
-              <Image src={avatar1} alt="" width="100%" height="100%" />
+              <Image src={avatar3} alt="" width="100%" height="100%" />
             </div>
             <p>
               He Printing and Typesetting the industry. <span>Lorem Ipsum</span>{" "}
@@ -96,6 +98,7 @@ const Section = styled.section`
           border-radius: 10rem;
           img {
             height: 10rem;
+            object-fit: cover;
           }
         }
       }

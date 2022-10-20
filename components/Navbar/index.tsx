@@ -1,20 +1,20 @@
 import { useState } from "react";
 import styled from "styled-components";
 import Image from "next/image";
-import logo from "../../assets/food.png";
+import logo from "../../assets/food2.png";
 import { BsToggleOn, BsToggleOff } from "react-icons/bs";
 import { Link as LinkScroll } from "react-scroll";
 
 const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
-  margin: 1rem 1rem 1rem 1rem;
+  margin: 0rem 1rem;
   .brand {
     display: flex;
     align-items: center;
     .logo {
       img {
-        height: 5vh;
+        object-fit: contain;
       }
     }
     .toggle {
@@ -25,7 +25,7 @@ const Nav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 43%;
+    
     ul {
       display: flex;
       list-style-type: none;
@@ -92,7 +92,7 @@ const Nav = styled.nav`
     margin: 0;
     z-index: 1;
     .brand {
-      padding: 2rem 1rem;
+      padding: 1rem 1rem;
       justify-content: space-between;
       width: 100%;
       z-index: 2;
@@ -110,7 +110,7 @@ const Nav = styled.nav`
       flex-direction: column;
       margin-top: 5rem;
       width: 100vw;
-      padding: 5rem 0;
+      padding: 4rem 0;
       transition: 0.4s ease-in-out;
       gap: 2rem;
       ul {
@@ -139,9 +139,8 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="Brand Logo"
-            className="brandLogo"
-            height={80}
-            width={350}
+            height={70}
+            width={100}
           />
         </div>
         <div className="toggle">
@@ -171,27 +170,17 @@ const Navbar = () => {
           </li>
           <li>
             <LinkScroll
-              to="blogs"
-              smooth={true}
-              duration={100}
-              style={{ cursor: "pointer" }}
-            >
-              Blog
-            </LinkScroll>
-          </li>
-          <li>
-            <LinkScroll
               to="portfolio"
               smooth={true}
               duration={100}
               style={{ cursor: "pointer" }}
             >
-              Portfolio
+              Prodcuts
             </LinkScroll>
           </li>
           <li>
             <LinkScroll
-              to="footr"
+              to="footer"
               smooth={true}
               duration={100}
               style={{ cursor: "pointer" }}

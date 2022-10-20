@@ -1,6 +1,6 @@
 import ScrollToTop from "../components/ScrollToTop";
 import Hero from "../components/Hero";
-import Blogs from "../components/Blogs";
+//import Blogs from "../components/Blogs";
 import Services from "../components/Services";
 import Portfolio from "components/Portfolio";
 import Testimonials from "components/Testimonials";
@@ -17,7 +17,7 @@ export default function Home() {
       <Testimonials />
       <Products />
       <Newsletter />
-      <Blogs />
+      {/* <Blogs /> */}
     </>
   );
 }
